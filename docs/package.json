@@ -1,0 +1,22 @@
+{
+  "name": "pwa-workshop.github.io",
+  "version": "0.0.1",
+  "description": "AMPlified (very simple) name card as Progressive Web Ap",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/pwa-workshop/pwa-workshop.github.io.git",
+    "type": "git"
+  },
+  "author": "ragingwind <ragingwind@gmail.com>",
+  "scripts": {
+    "start": "http-server ./src -o",
+    "test": "amphtml-validator ./src/index.html",
+    "deploy": "gh-pages -d src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "amphtml-validator": "^1.0.15",
+    "gh-pages": "^0.12.0",
+    "http-server": "^0.9.0"
+  }
+}
